@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#0087D8",
+          "foreground": "#003544",
+          "leading_diamond": "\ue0b6",
+          "properties": {
+            "folder_separator_icon": "/",
+            "style": "full"
+          },
+          "style": "diamond",
+          "template": "\ue5ff {{ .Path }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "path"
+        },
+        {
+          "background": "#00909a",
+          "background_templates": [
+            "{{ if and (.Working.Changed) (.Staging.Changed) }}#f44d27{{ end }}",
+            "{{ if (.Staging.Changed) }}#f44d27{{ end }}",
+            "{{ if (.Working.Changed) }}#cd9f00{{ end }}"
+          ],
+          "foreground": "#193549",
+          "properties": {
+            "fetch_status": true
+          },
+          "style": "diamond",
+          "template": " {{ .HEAD }} {{ if .Working.Changed }}M{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} | {{ end }}{{ if .Staging.Changed }}S{{ .Staging.String }}{{ end }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#fff",
+          "style": "plain",
+          "template": "$ ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "final_space": true,
+  "version": 3
+}

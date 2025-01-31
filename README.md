@@ -1,6 +1,6 @@
 # README
 
-以 ***iterm2*** 為基底，輔以個人使用 `Shell language` 的邏輯與習慣，以此融合為 ***psterm***。相關資料與筆記整理在下方，是 ***psterm*** 的標準。
+***psterm*** 是基於 ***iterm2*** 的終端機主題。以 ***iterm2*** 為基底，輔以個人使用 `Shell language` 的邏輯與習慣，以此融合為 ***psterm***。相關資料與筆記整理在下方，是 ***psterm*** 的標準。
 
 目前有兩個版本: ***psterm*** 與 ***pstermd***。兩者類型(type)都一樣。相關差異表格如下:
 

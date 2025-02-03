@@ -1,6 +1,6 @@
 # README
 
-***psterm*** 是基於 ***iterm2*** 的終端機主題。以 ***iterm2*** 為基底，輔以個人使用 `Shell language` 的邏輯與習慣，以此融合為 ***psterm***。相關資料與筆記整理在下方，是 ***psterm*** 的標準。
+***psterm*** 是一個基於 ***iterm2*** 的終端機主題，用於美化介面、方便使用者更直覺的使用 `Git` (將狀態等直接顯示於終端機畫面)。***psterm*** 以 ***iterm2*** 為基底，輔以個人使用 `Shell language` 的邏輯與習慣，以此發展為 ***psterm***。相關資料與筆記整理在下方，是 ***psterm*** 的標準。
 
 目前有兩個版本: ***psterm*** 與 ***pstermd***。兩者類型(type)都一樣。相關差異表格如下:
 
@@ -10,12 +10,14 @@
 - Style
   |版本|***psterm***|***pstermd***|
   |-|-|-|
-  |style|plain|diamond|
-  |symbol|text|semi-triangle|
+  |樣式|plain|diamond|
+  |圖示|text|semi-triangle|
+
+`Git` 相關概念是採用 *Pro Git 2nd by Scott Chacon and Ben Straub*，而此書我也有整理其重要概念與常用指令的筆記，筆記內容同時 Oh My Posh 渲染 `Git` 的標準
 
 ## Oh My Posh
 
-- 中文翻譯
+- 中英文對照(僅供參考)
   - Block 區塊
   - Segment 模組
   - type 類型
@@ -61,8 +63,8 @@
 
 ### 工作流程
 
-1. Modified 與 Staged 同時存在時，會以 | 隔開，且顏色為 #f44d27 (Staged)，另外 ***psterm*** 的圖示改以縮寫(M、S)來代表檔案的兩大類狀態(Modified、Staged)的變動
-2. template 邏輯為: HEAD + Modified + Staged
+1. Modified 與 Staged 同時存在時，會以 `|` 隔開，且顏色顯示為 #f44d27 (Staged)，另外 ***psterm*** 的圖示以縮寫(M、S)來代表檔案的兩大類狀態(Modified、Staged)的變動，而非 ***iterm2*** 的圖示
+2. 模板邏輯為: HEAD + Modified + Staged
    > `master M?1 ~1 -1 | S+1 ~1 -1`
 
 ## References
